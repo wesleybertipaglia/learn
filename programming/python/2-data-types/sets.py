@@ -1,5 +1,5 @@
 # sets
-# unordered, unchangeabçe, unique items, don't have index
+# unordered, unchangeable, unique items, don't have index
 
 fruits = {"apple", "banana", "cherry", "apple"}
 tropical = {"pineapple", "mango", "papaya"}
