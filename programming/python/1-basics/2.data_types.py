@@ -1,7 +1,8 @@
 # Data types
 
 # strings
-x = "Hello World" # str
+x = "Hello World"
+x = 'Hello World' # same as above
 
 # booleans
 x = True
@@ -41,3 +42,14 @@ x = None # NoneType
 # setting a specific data type
 x = str("Hello World")
 x = int(20)
+
+# getting the data type
+x = 5
+print(type(x)) # <class 'int'>
+
+# casting
+x = int(1) # 1
+x = int(2.8) # 2
+x = int("3") # 3
+x = float(1) # 1.0
+x = set(("apple", "banana", "cherry")) # {'apple', 'banana', 'cherry'}
