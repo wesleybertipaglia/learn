@@ -36,9 +36,9 @@ sum = 1 + 2
 sub = 5 - 3
 mul = 8 * 5
 div = 10 / 2
-flo = 11 // 2
-mod = 33 % 2
-exp = 2 ** 3
+flo = 11 // 2 # absolute division (discard the decimal part) = 5
+mod = 33 % 2 # module (remainder of the division) = 1
+exp = 2 ** 3 # exponentiation = 8
 
 # conditionals
 value = 20
@@ -60,7 +60,7 @@ while i < 10:
     print(i)
     i += 1
 
-# for in
+# for loop (in)
 fruits = ['apple', 'banana', 'kwi', 'coconut']
 
 for fruit in fruits:
@@ -70,11 +70,11 @@ for fruit in fruits:
         continue # skip the current interation
     print(fruit)
 
-# for in range
+# for loop (in range)
 for x in range(10):
     print(x)
 
-# try except finally
+# try, except, finally
 try:
     if x < 0:
         raise Exception("Sorry, no numbers bellow zero.")
