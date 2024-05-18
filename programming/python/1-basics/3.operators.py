@@ -1,11 +1,13 @@
+# Operators
+
 # arithmetic
 sum = 1 + 2
 sub = 5 - 3
 mul = 8 * 5
 div = 10 / 2
-flo = 11 // 2
-mod = 33 % 2
-exp = 2 ** 3
+flo = 11 // 2 # absolute division (discard the decimal part) = 5
+mod = 33 % 2 # module (remainder of the division) = 1
+exp = 2 ** 3 # exponentiation = 8
 
 # assignment
 x = 10  # Assignment

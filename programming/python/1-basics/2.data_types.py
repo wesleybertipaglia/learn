@@ -1,3 +1,5 @@
+# Data types
+
 # strings
 x = "Hello World" # str
 
