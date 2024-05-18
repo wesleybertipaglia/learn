@@ -7,8 +7,10 @@
 *.so
 *.dylib
 
-# Ignore cache
-__pycache__
+# Ignore python files
+venv/
+__pycache__/
+.pytest_cache/
 
 # Ignore build output directories
 bin/
