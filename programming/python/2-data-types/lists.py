@@ -1,5 +1,9 @@
 # lists
 # ordered, changeable, allow duplicates
+# syntax: list = [elements]
+# data types: any data type
+# stored: in a memory block
+# size: dynamic
 
 fruits = ["apple", "banana", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
