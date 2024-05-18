@@ -1,4 +1,6 @@
-# ordered, changeable, unique keys
+# Dictionaries are used to store data values in key:value pairs.
+# is the same as an HashMap or a HashTable
+# is ordered, changeable, unique keys
 
 car = {
     "brand": "ford",
