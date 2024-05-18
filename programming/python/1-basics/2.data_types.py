@@ -10,6 +10,10 @@ x = 20 # int
 x = 20.5 # float
 x = 1j # complex
 
+# array: ordered, mutable, allow duplicates
+from array import array
+x = array('i', [1, 2, 3, 4, 5])
+
 # list: ordered, mutable, allow duplicates
 x = ["apple", "banana", "cherry"]
 
