@@ -1,21 +1,35 @@
 # lists
-# ordered, changeable, allow duplicates
-# syntax: list = [elements]
-# data types: any data type
+# ordered, mutable, allow duplicates
+# data types: different types of data
 # stored: in a memory block
 # size: dynamic
 
+# syntax: list = [elements]
 fruits = ["apple", "banana", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
 
-# accessing items
-fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon"]
+# accessing items (O(1))
 fruits[0] # first element
 fruits[-1] # last element
 fruits[-2] # second last element
-fruits[2:] # ["cherry", "orange", "kiwi", "melon"]
-fruits[:1] # ["apple"]
-fruits[2:4] # ["cherry", "orange"]
+fruits[2:] # from the position 2 to the end
+fruits[:1] # from the beginning to the position 1
+fruits[2:4] # from the position 2 to the position 4
+
+# searching (O(n))
+fruits.index("banana") # search for a value
+fruits.count("banana") # count the number of occurrences
+
+# adding items (O(n))
+fruits.insert(2, "watermelon") # insert in determined index
+fruits.append("orange") # append to the end
+fruits.extend(tropical) # append a list to another
+
+# removing items (O(n))
+fruits.remove("kiwi")
+fruits.pop() # remove the last item
+fruits.pop(1) # remove item from a specified index
+del fruits[0] # remove item from a specified index
 
 # reordering
 fruits.sort() # sort alphanumerically
@@ -25,17 +39,6 @@ fruits.reverse() # reverse
 # change items
 fruits[1] = "blackcurrant"
 fruits[1:3] = ["blackcurrant", "watermelon"]
-
-# adding items
-fruits.insert(2, "watermelon") # insert in determined index
-fruits.append("orange") # append to the end
-fruits.extend(tropical) # append a list to another
-
-# removing items
-fruits.remove("kiwi")
-fruits.pop() # remove the last item
-fruits.pop(1) # remove item from a specified index
-del fruits[0] # remove item from a specified index
 
 # join
 fruits = fruits + tropical
