@@ -9,4 +9,3 @@ def test_jumping_on_clouds():
     assert_jumping_on_clouds([0, 0, 0, 0, 1, 0], 3)
     assert_jumping_on_clouds([0, 0, 0, 1, 0, 0], 3)
     assert_jumping_on_clouds([0, 0, 0, 0, 0, 0], 3)
-
