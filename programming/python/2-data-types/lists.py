@@ -8,7 +8,7 @@
 fruits = ["apple", "banana", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
 
-# accessing items (O(1))
+# accessing items - O(1)
 fruits[0] # first element
 fruits[-1] # last element
 fruits[-2] # second last element
@@ -16,16 +16,16 @@ fruits[2:] # from the position 2 to the end
 fruits[:1] # from the beginning to the position 1
 fruits[2:4] # from the position 2 to the position 4
 
-# searching (O(n))
+# searching - O(n)
 fruits.index("banana") # search for a value
 fruits.count("banana") # count the number of occurrences
 
-# adding items (O(n))
+# adding items - O(n)
 fruits.insert(2, "watermelon") # insert in determined index
 fruits.append("orange") # append to the end
 fruits.extend(tropical) # append a list to another
 
-# removing items (O(n))
+# removing items - O(n)
 fruits.remove("kiwi")
 fruits.pop() # remove the last item
 fruits.pop(1) # remove item from a specified index
