@@ -40,7 +40,7 @@ Dockerfiles provide a number of benefits when building Docker images:
 
 Dockerfiles can be used to define a wide range of images, from simple applications to complex multi-service architectures. Some common use cases for Dockerfiles include:
 
-Build Docker Images: Define the steps needed to create a Docker image, including the base image, dependencies, and configuration.
+- Build Docker Images: Define the steps needed to create a Docker image, including the base image, dependencies, and configuration.
 
 - Install Software: Use the RUN instruction to install packages and dependencies inside the container. This ensures that every time the image is built, it includes the necessary software.
 
