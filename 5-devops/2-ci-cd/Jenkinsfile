@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the application...'
+                sh 'npm install' // Install dependencies
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                sh 'npm test' // Run tests
+            }
+        }
+        stage('Deploy to Staging') {
+            steps {
+                echo 'Deploying to staging environment...'
+                // Here, you would add commands to deploy your application to a staging server
+                sh './deploy.sh' // Example deploy script
+            }
+        }
+        stage('Deploy to Production') {
+            when {
+                branch 'main' // Only deploy if we're on the main branch
+            }
+            steps {
+                input 'Approve deployment to production?' // Manual approval step
+                echo 'Deploying to production environment...'
+                sh './deploy.sh --prod' // Deploy to production
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
