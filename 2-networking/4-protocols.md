@@ -10,7 +10,10 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - **IPv6**: Usa endereços de 128 bits para suportar um número maior de endereços (ex: 2001:db8::1).
 - **Protocolos Relacionados**: ICMP, IGMP.
 
-## 2. TCP (Transmission Control Protocol)
+
+## 2. Protocolos de Transferência
+
+### TCP (Transmission Control Protocol)
 
 - **Função**: Garante a entrega confiável e ordenada dos pacotes de dados entre aplicações.
 - **Características**: 
@@ -19,7 +22,7 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Correção de erros e retransmissão de pacotes perdidos.
 - **Uso Comum**: Aplicações que requerem entrega confiável, como HTTP, FTP.
 
-## 3. UDP (User Datagram Protocol)
+### UDP (User Datagram Protocol)
 
 - **Função**: Protocolo de transporte sem conexão que oferece uma comunicação mais rápida, mas sem garantias de entrega.
 - **Características**: 
@@ -27,7 +30,7 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Menor sobrecarga comparado ao TCP.
 - **Uso Comum**: Aplicações que preferem velocidade e podem tolerar perdas de pacotes, como streaming de vídeo e jogos online.
 
-## 4. HTTP (Hypertext Transfer Protocol)
+### HTTP (Hypertext Transfer Protocol)
 
 - **Função**: Protocolo de aplicação usado para a transferência de páginas web e recursos associados.
 - **Características**: 
@@ -36,7 +39,7 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Versão segura: HTTPS (HTTP Secure), que utiliza SSL/TLS para criptografia.
 - **Uso Comum**: Navegação na web, APIs web.
 
-## 5. FTP (File Transfer Protocol)
+### FTP (File Transfer Protocol)
 
 - **Função**: Protocolo para a transferência de arquivos entre sistemas.
 - **Características**: 
@@ -45,7 +48,9 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Suporte a autenticação e modos de transferência (ativo e passivo).
 - **Uso Comum**: Transferência de arquivos entre servidores e clientes.
 
-## 6. SMTP (Simple Mail Transfer Protocol)
+## 3. Protocolos de E-mail
+
+### SMTP (Simple Mail Transfer Protocol)
 
 - **Função**: Protocolo para o envio de e-mails entre servidores.
 - **Características**: 
@@ -54,7 +59,7 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Comumente usado em conjunto com IMAP ou POP3 para o recebimento de e-mails.
 - **Uso Comum**: Envio de e-mails através de servidores de correio.
 
-## 7. IMAP (Internet Message Access Protocol)
+### IMAP (Internet Message Access Protocol)
 
 - **Função**: Protocolo para acesso e gerenciamento de e-mails em um servidor.
 - **Características**: 
@@ -63,7 +68,7 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Suporta pastas e gerencia o status dos e-mails.
 - **Uso Comum**: Acesso a e-mails em servidores de correio, como Gmail ou Outlook.
 
-## 8. POP3 (Post Office Protocol version 3)
+### POP3 (Post Office Protocol version 3)
 
 - **Função**: Protocolo para o recebimento de e-mails do servidor.
 - **Características**: 
@@ -72,7 +77,18 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Simples e adequado para clientes que não precisam manter os e-mails no servidor.
 - **Uso Comum**: Baixar e-mails para armazenamento local.
 
-## 9. DNS (Domain Name System)
+
+## 4. Protocolos de Endereçamento
+
+### DHCP (Dynamic Host Configuration Protocol)
+
+- **Função**: Atribui dinamicamente endereços IP e configurações de rede para dispositivos.
+- **Características**: 
+  - Opera sobre a porta 67 (servidor) e 68 (cliente).
+  - Automatiza o processo de configuração de rede para novos dispositivos.
+- **Uso Comum**: Configuração automática de endereços IP em redes locais.
+
+### DNS (Domain Name System)
 
 - **Função**: Traduz nomes de domínio em endereços IP.
 - **Características**: 
@@ -81,17 +97,9 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Facilita a navegação na web traduzindo URLs amigáveis para endereços IP.
 - **Uso Comum**: Resolução de nomes de domínio para acesso a websites e serviços online.
 
-## 10. DHCP (Dynamic Host Configuration Protocol)
+## 5. Protocolos de Segurança
 
-- **Função**: Atribui dinamicamente endereços IP e configurações de rede para dispositivos.
-- **Características**: 
-  - Opera sobre a porta 67 (servidor) e 68 (cliente).
-  - Automatiza o processo de configuração de rede para novos dispositivos.
-- **Uso Comum**: Configuração automática de endereços IP em redes locais.
-
-## 11. Protocolos de Segurança
-
-### 11.1. HTTPS (HTTP Secure)
+### HTTPS (HTTP Secure)
 
 - **Função**: Versão segura do HTTP que criptografa a comunicação entre cliente e servidor.
 - **Características**: 
@@ -100,7 +108,7 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
   - Garante a confidencialidade e integridade dos dados
 - **Uso Comum**: Transações online seguras, login em sites, proteção de dados sensíveis.
 
-### 11.2. SSL/TLS (Secure Sockets Layer/Transport Layer Security)
+### SSL/TLS (Secure Sockets Layer/Transport Layer Security)
 
 - **Função**: Protocolos de criptografia para garantir a segurança das comunicações.
 - **Características**: 
@@ -111,6 +119,5 @@ Os protocolos de rede definem as regras e formatos para a comunicação entre di
 
 ---
 
-Esses são alguns dos protocolos fundamentais que permitem a comunicação e a operação eficaz das redes modernas. Cada protocolo desempenha um papel crucial em diferentes aspectos da comunicação de dados.
-
-Se precisar de mais detalhes ou de outros protocolos, é só avisar!
+- [Previous](./3-tcp.md)
+- [Next](./5-address.md)
