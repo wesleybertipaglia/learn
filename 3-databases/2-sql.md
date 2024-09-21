@@ -1,151 +1,149 @@
 # SQL (Structured Query Language)
 
-## 1. O que é SQL?
-O **SQL** (Structured Query Language) é uma linguagem padrão usada para gerenciar e manipular bancos de dados relacionais. Ela permite executar comandos para criar, modificar, consultar e controlar o acesso a dados em um banco de dados.
+## 1. What is SQL?
+**SQL** (Structured Query Language) is a standard language used to manage and manipulate relational databases. It allows you to execute commands to create, modify, query, and control access to data in a database.
 
-## 2. Categorias de Comandos SQL
-Os comandos SQL podem ser classificados em várias categorias, dependendo da finalidade:
+## 2. SQL Command Categories
+SQL commands can be classified into several categories, depending on their purpose:
 
 ### 2.1. DML (Data Manipulation Language)
-Comandos usados para manipulação de dados, ou seja, inserir, atualizar, excluir e consultar dados em tabelas.
+Commands used to manipulate data, i.e., insert, update, delete, and query data in tables.
 
-- **`SELECT`**: Recupera dados de uma tabela.
-  - Exemplo: `SELECT * FROM Clientes;`
-- **`INSERT`**: Insere novos dados em uma tabela.
-  - Exemplo: `INSERT INTO Clientes (Nome, Email) VALUES ('João', 'joao@email.com');`
-- **`UPDATE`**: Atualiza dados existentes em uma tabela.
-  - Exemplo: `UPDATE Clientes SET Email = 'joao@novoemail.com' WHERE ID_Cliente = 1;`
-- **`DELETE`**: Exclui dados de uma tabela.
-  - Exemplo: `DELETE FROM Clientes WHERE ID_Cliente = 1;`
+- **`SELECT`**: Retrieves data from a table.
+- Example: `SELECT * FROM Clientes;`
+- **`INSERT`**: Inserts new data into a table.
+- Example: `INSERT INTO Customers (Name, Email) VALUES ('John', 'john@email.com');`
+- **`UPDATE`**: Updates existing data in a table.
+- Example: `UPDATE Customers SET Email = 'john@newemail.com' WHERE Customer_ID = 1;`
+- **`DELETE`**: Deletes data from a table.
+- Example: `DELETE FROM Customers WHERE Customer_ID = 1;`
 
 ### 2.2. DDL (Data Definition Language)
-Comandos usados para definir ou modificar a estrutura de bancos de dados e tabelas.
+Commands used to define or modify the structure of databases and tables.
 
-- **`CREATE`**: Cria novas tabelas, bancos de dados, índices ou outros objetos.
-  - Exemplo: `CREATE TABLE Clientes (ID_Cliente INT PRIMARY KEY, Nome VARCHAR(100), Email VARCHAR(100));`
-- **`ALTER`**: Modifica a estrutura de uma tabela existente (ex: adicionar ou remover colunas).
-  - Exemplo: `ALTER TABLE Clientes ADD Telefone VARCHAR(15);`
-- **`DROP`**: Remove uma tabela, banco de dados ou outro objeto.
-  - Exemplo: `DROP TABLE Clientes;`
+- **`CREATE`**: Creates new tables, databases, indexes or other objects. - Example: `CREATE TABLE Clientes (ID_Cliente INT PRIMARY KEY, Nome VARCHAR(100), Email VARCHAR(100));`
+- **`ALTER`**: Modifies the structure of an existing table (e.g.: add or remove columns).
+- Example: `ALTER TABLE Clientes ADD Telefone VARCHAR(15);`
+- **`DROP`**: Removes a table, database or other object.
+- Example: `DROP TABLE Clientes;`
 
 ### 2.3. DCL (Data Control Language)
-Comandos usados para controlar o acesso e as permissões de usuários no banco de dados.
+Commands used to control user access and permissions in the database.
 
-- **`GRANT`**: Concede permissões a usuários.
-  - Exemplo: `GRANT SELECT, INSERT ON Clientes TO Usuario;`
-- **`REVOKE`**: Revoga permissões de usuários.
-  - Exemplo: `REVOKE INSERT ON Clientes FROM Usuario;`
+- **`GRANT`**: Grants permissions to users.
+- Example: `GRANT SELECT, INSERT ON Clientes TO Usuario;`
+- **`REVOKE`**: Revokes user permissions.
+- Example: `REVOKE INSERT ON Clientes FROM Usuario;`
 
 ### 2.4. TCL (Transaction Control Language)
-Comandos usados para gerenciar transações no banco de dados, garantindo a consistência dos dados.
+Commands used to manage transactions in the database, ensuring data consistency.
 
-- **`COMMIT`**: Confirma as alterações feitas na transação.
-  - Exemplo: `COMMIT;`
-- **`ROLLBACK`**: Desfaz as alterações feitas durante a transação.
-  - Exemplo: `ROLLBACK;`
-- **`SAVEPOINT`**: Define um ponto na transação para que você possa fazer um rollback parcial.
-  - Exemplo: `SAVEPOINT ponto1;`
+- **`COMMIT`**: Commits the changes made in the transaction.
+- Example: `COMMIT;`
+- **`ROLLBACK`**: Undoes the changes made during the transaction.
+- Example: `ROLLBACK;`
+- **`SAVEPOINT`**: Sets a point in the transaction so that you can do a partial rollback.
+- Example: `SAVEPOINT point1;`
 
-## 3. Claúsulas SQL Comuns
-SQL oferece várias cláusulas que podem ser usadas para modificar consultas `SELECT` e outras operações. Algumas das mais importantes são:
+## 3. Common SQL Clauses
+SQL offers several clauses that can be used to modify `SELECT` queries and other operations. Some of the most important are:
 
 ### 3.1. `WHERE`
-Filtra registros com base em uma condição específica.
-- Exemplo: `SELECT * FROM Clientes WHERE Cidade = 'São Paulo';`
+Filters records based on a specific condition.
+- Example: `SELECT * FROM Clientes WHERE Cidade = 'São Paulo';`
 
 ### 3.2. `ORDER BY`
-Ordena os resultados com base em uma ou mais colunas.
-- Exemplo: `SELECT * FROM Clientes ORDER BY Nome ASC;`
+Sorts the results based on one or more columns.
+- Example: `SELECT * FROM Customers ORDER BY Name ASC;`
 
 ### 3.3. `GROUP BY`
-Agrupa os registros com base em uma ou mais colunas e geralmente é usado com funções de agregação (como `COUNT`, `SUM`, `AVG`).
-- Exemplo: `SELECT Cidade, COUNT(*) FROM Clientes GROUP BY Cidade;`
+Groups the records based on one or more columns and is usually used with aggregate functions (such as `COUNT`, `SUM`, `AVG`).
+- Example: `SELECT City, COUNT(*) FROM Customers GROUP BY City;`
 
 ### 3.4. `HAVING`
-Filtra os grupos criados pela cláusula `GROUP BY` com base em uma condição.
-- Exemplo: `SELECT Cidade, COUNT(*) FROM Clientes GROUP BY Cidade HAVING COUNT(*) > 5;`
+Filters the groups created by the `GROUP BY` clause based on a condition.
+- Example: `SELECT City, COUNT(*) FROM Customers GROUP BY City HAVING COUNT(*) > 5;`
 
 ### 3.5. `JOIN`
-Combina dados de duas ou mais tabelas com base em uma condição. Existem vários tipos de joins:
-- **`INNER JOIN`**: Retorna registros que têm correspondências nas duas tabelas.
-  - Exemplo: `SELECT Clientes.Nome, Pedidos.ID_Pedido FROM Clientes INNER JOIN Pedidos ON Clientes.ID_Cliente = Pedidos.ID_Cliente;`
-- **`LEFT JOIN`**: Retorna todos os registros da tabela à esquerda e os correspondentes da tabela à direita. Se não houver correspondência, retorna `NULL`.
-  - Exemplo: `SELECT Clientes.Nome, Pedidos.ID_Pedido FROM Clientes LEFT JOIN Pedidos ON Clientes.ID_Cliente = Pedidos.ID_Cliente;`
-- **`RIGHT JOIN`**: Retorna todos os registros da tabela à direita e os correspondentes da tabela à esquerda.
-  - Exemplo: `SELECT Clientes.Nome, Pedidos.ID_Pedido FROM Clientes RIGHT JOIN Pedidos ON Clientes.ID_Cliente = Pedidos.ID_Cliente;`
+Combines data from two or more tables based on a condition. There are several types of joins:
+- **`INNER JOIN`**: Returns records that have matches in both tables.
+- Example: `SELECT Customers.Name, Orders.Order_ID FROM Customers INNER JOIN Orders ON Customers.Customer_ID = Orders.Customer_ID;`
+- **`LEFT JOIN`**: Returns all records from the table on the left and the corresponding ones from the table on the right. If there is no match, returns `NULL`.
+- Example: `SELECT Customers.Name, Orders.Order_ID FROM Customers LEFT JOIN Orders ON Customers.Customer_ID = Orders.Customer_ID;`
+- **`RIGHT JOIN`**: Returns all records from the table on the right and the corresponding ones from the table on the left. - Example: `SELECT Customers.Name, Orders.Order_ID FROM Customers RIGHT JOIN Orders ON Customers.Customer_ID = Orders.Customer_ID;`
 
-## 4. Funções de Agregação
-As funções de agregação realizam cálculos em um conjunto de valores e retornam um único valor.
+## 4. Aggregate Functions
+Aggregate functions perform calculations on a set of values ​​and return a single value.
 
-- **`COUNT()`**: Conta o número de linhas.
-  - Exemplo: `SELECT COUNT(*) FROM Clientes;`
-- **`SUM()`**: Soma os valores de uma coluna numérica.
-  - Exemplo: `SELECT SUM(Preco) FROM Produtos;`
-- **`AVG()`**: Calcula a média dos valores de uma coluna numérica.
-  - Exemplo: `SELECT AVG(Preco) FROM Produtos;`
-- **`MAX()`**: Retorna o valor máximo de uma coluna.
-  - Exemplo: `SELECT MAX(Preco) FROM Produtos;`
-- **`MIN()`**: Retorna o valor mínimo de uma coluna.
-  - Exemplo: `SELECT MIN(Preco) FROM Produtos;`
+- **`COUNT()`**: Counts the number of rows.
+- Example: `SELECT COUNT(*) FROM Customers;`
+- **`SUM()`**: Adds the values ​​of a numeric column.
+- Example: `SELECT SUM(Price) FROM Products;`
+- **`AVG()`**: Calculates the average of the values ​​of a numeric column.
+- Example: `SELECT AVG(Price) FROM Products;`
+- **`MAX()`**: Returns the maximum value of a column. - Example: `SELECT MAX(Price) FROM Products;`
+- **`MIN()`**: Returns the minimum value of a column.
+- Example: `SELECT MIN(Price) FROM Products;`
 
-## 5. Subconsultas
-As **subconsultas** são consultas aninhadas dentro de outra consulta SQL. Elas podem ser usadas em várias cláusulas, como `WHERE`, `FROM`, ou `SELECT`.
+## 5. Subqueries
+**Subqueries** are nested queries inside another SQL query. They can be used in multiple clauses, such as `WHERE`, `FROM`, or `SELECT`.
 
-- **Exemplo**: `SELECT Nome FROM Clientes WHERE ID_Cliente IN (SELECT ID_Cliente FROM Pedidos WHERE Valor > 1000);`
+- **Example**: `SELECT Name FROM Customers WHERE Customer_ID IN (SELECT Customer_ID FROM Orders WHERE Value > 1000);`
 
-## 6. Índices
-**Índices** são usados para acelerar a recuperação de dados em uma tabela, permitindo que o banco de dados localize dados mais rapidamente.
+## 6. Indexes
+**Indexes** are used to speed up data retrieval in a table, allowing the database to locate data more quickly.
 
-- **Criando um Índice**: `CREATE INDEX idx_nome ON Clientes(Nome);`
-- **Removendo um Índice**: `DROP INDEX idx_nome;`
+- **Creating an Index**: `CREATE INDEX idx_nome ON Clientes(Nome);`
+- **Removing an Index**: `DROP INDEX idx_nome;`
 
-## 7. Vistas (Views)
-Uma **vista** é uma tabela virtual baseada no resultado de uma consulta SQL. Vistas são usadas para simplificar consultas complexas, melhorar a segurança e reduzir a complexidade de manutenção.
+## 7. Views
+A **view** is a virtual table based on the result of an SQL query. Views are used to simplify complex queries, improve security, and reduce maintenance complexity.
 
-- **Criando uma Vista**: `CREATE VIEW vista_clientes_pedidos AS SELECT Clientes.Nome, Pedidos.Data FROM Clientes INNER JOIN Pedidos ON Clientes.ID_Cliente = Pedidos.ID_Cliente;`
-- **Consultando uma Vista**: `SELECT * FROM vista_clientes_pedidos;`
-- **Removendo uma Vista**: `DROP VIEW vista_clientes_pedidos;`
+- **Creating a View**: `CREATE VIEW vista_clientes_pedidos AS SELECT Clientes.Nome, Pedidos.Date FROM Clientes INNER JOIN Pedidos ON Clientes.ID_Cliente = Pedidos.ID_Cliente;`
+- **Querying a View**: `SELECT * FROM vista_clientes_pedidos;`
+- **Removing a View**: `DROP VIEW vista_clientes_pedidos;`
 
-## 8. Procedimentos Armazenados e Funções
-**Procedimentos Armazenados** são blocos de código SQL que podem ser armazenados e executados no servidor do banco de dados.
+## 8. Stored Procedures and Functions
+**Stored Procedures** are blocks of SQL code that can be stored and executed on the database server.
 
-- **Procedimento**: 
+- **Procedure**:
 ```sql
--- criando um procedimento
-CREATE PROCEDURE AtualizaEstoque(IN produto_id INT, IN quantidade INT)
+-- creating a procedure
+CREATE PROCEDURE AtualizaEstoque(IN produto_id INT, IN quanto INT)
 BEGIN
-    UPDATE Produtos SET Estoque = Estoque + quantidade WHERE ID_Produto = produto_id;
+UPDATE Produtos SET Estoque = Estoque + quanto WHERE ID_Produto = produto_id;
 END;
 
--- chamando um procedimento
+-- calling a procedure
 CALL AtualizaEstoque(1, 10);
 ```
 
-- **Funções** são blocos de código SQL que retornam um valor.
+- **Functions** are blocks of SQL code that return a value.
 
 ```sql
--- criando uma função
-CREATE FUNCTION CalculaDesconto(preco DECIMAL(10,2), desconto DECIMAL(4,2))
+-- creating a function
+CREATE FUNCTION CalculatesDiscount(price DECIMAL(10,2), discount DECIMAL(4,2))
 RETURNS DECIMAL(10,2)
 
 BEGIN
-    DECLARE valor_desconto DECIMAL(10,2);
-    SET valor_desconto = preco * (desconto / 100);
-    RETURN preco - valor_desconto;
+DECLARE discount_value DECIMAL(10,2);
+SET discount_value = price * (discount / 100);
+RETURN price - discount_value;
 END;
 
--- chamando uma função
-SELECT CalculaDesconto(100, 10);
+-- calling a function
+SELECT CalculatesDiscount(100, 10);
 ```
 
-## 9. Transações
+## 9. Transactions
 
-Uma transação é um conjunto de operações SQL que deve ser executado como uma única unidade lógica. As propriedades ACID (Atomicidade, Consistência, Isolamento, Durabilidade) garantem a confiabilidade das transações.
+A transaction is a set of SQL operations that must be executed as a single logical unit. ACID (Atomicity, Consistency, Isolation, Durability) properties ensure the reliability of transactions.
 
-- Iniciando uma Transação: `START TRANSACTION;`
-- Confirmando uma Transação: `COMMIT;`
-- Desfazendo uma Transação: `ROLLBACK;`
+- Starting a Transaction: `START TRANSACTION;`
+- Committing a Transaction: `COMMIT;`
+- Rolling Back a Transaction: `ROLLBACK;`
 
 ---
 
-Esse resumo cobre os principais conceitos e comandos SQL, fornecendo uma base sólida para a manipulação de bancos de dados relacionais.
+- [Previous](./1-fundamentals.md)
+- [Next](./3-nosql.md)
