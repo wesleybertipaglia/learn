@@ -6,16 +6,16 @@ This path is designed to help you understand the core concepts of computer netwo
 
 ## Topics
 
-1. Foundations of Computer Networks
-2. OSI Model
-3. TCP/IP
-4. Protocols
-5. Routing
-6. Switching
-7. Network Security
-8. Wireless Networks
-9. Network Management
-10. Network Monitoring
+1. [Foundations of Computer Networks](./1-fundamentals.md)
+2. [Classification of Networks](./2-classification.md)
+3. [Network Devices](./3-devices.md)
+4. [OSI Model](./4-osi.md)
+5. [TCP/IP Model](./5-tcp.md)
+6. [Network Protocols](./6-protocols.md)
+7. [Network Addressing](./7-addressing.md)
+8. [Network Security](./8-security.md)
+9. [Network Monitoring](./9-monitoring.md)
+10. [Network Administration](./10-administration.md)
 
 ## Resources
 

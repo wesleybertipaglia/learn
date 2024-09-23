@@ -27,5 +27,5 @@ The TCP/IP Model is a network architecture that serves as the basis for the Inte
 
 ---
 
-- [Previous](./2-osi.md)
-- [Next](./4-protocols.md)
+- [Previous](./4-osi.md)
+- [Next](./6-protocols.md)

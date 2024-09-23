@@ -45,5 +45,5 @@ The OSI Model is a reference model for computer networks that divides network co
 
 ---
 
-- [Previous](./1-fundamentals.md)
-- [Next](./3-tcp.md)
+- [Previous](./3-devices.md)
+- [Next](./5-tcp.md)
