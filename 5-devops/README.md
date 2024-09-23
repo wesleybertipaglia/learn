@@ -4,12 +4,11 @@ Welcome to the DevOps learning path! Here you'll find resources, projects, and e
 
 ## Topics
 
-- Git 
-- Continuous Integration (CI)
-- Continuous Deployment (CD)
-- Containerization and Orchestration
-- Monitoring and Logging
-- Configuration Management
+1. [Git](./1-git/README.md)
+2. [Continuous Integration and Continuous Deployment (CI/CD)](./2-ci-cd/README.md)
+3. [Virtualization](./3-virtualization/README.md)
+4. [Containerization and Orchestration](./4-containers/README.md)
+5. [Monitoring and Logging](./5-monitoring/README.md)
 
 ## Resources
 
