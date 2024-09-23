@@ -33,7 +33,7 @@ This path is designed to help you understand the core concepts of computer netwo
 - `FREE` [Cisco Networking Academy - provides a wide range of courses on computer networking](https://www.netacad.com/)
 - `FREE` [Networking for Web Developers - by Udacity](https://www.udacity.com/course/networking-for-web-developers--ud256)
 - `FREE` [Computer Networks - by MIT OpenCourseWare](https://ocw.mit.edu/courses/6-829-computer-networks-fall-2002/)
-- `FREE` [Computers and The - by Khan Academy](https://www.khanacademy.org/computing/computers-and-internet/)
+- `FREE` [Computers and The Internet - by Khan Academy](https://www.khanacademy.org/computing/computers-and-internet/)
 - `FREE` [Networking and Storage Essentials - by IBM](https://www.edx.org/learn/computer-networking/ibm-networking-and-storage-essentials)
 - `PAID` [The Bits and Bytes of Computer Networking - by Google](https://www.coursera.org/learn/computer-networking)
 - `PAID` [Networking Fundamentals - by Akamai](https://www.coursera.org/learn/akamai-networking)
