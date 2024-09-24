@@ -26,4 +26,9 @@ This path is designed to help you understand the core concepts of operating syst
 
 ## Resources
 
-- [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+- `FREE` [Operating Systems: Three Easy Pieces - by Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+- `PAID` [Operating Systems: Three Easy Pieces - by Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau](https://www.amazon.com/dp/B00TPZ17O4)
+- `FREE` [Operating System Concepts - by Abraham Silberschatz, Greg Gagne, and Peter Baer Galvin](https://codex.cs.yale.edu/avi/os-book/)
+- `PAID` [Operating System Concepts - by Abraham Silberschatz, Greg Gagne, and Peter Baer Galvin](https://www.amazon.com/dp/B07CVKH7BD)
+- `PAID` [Modern Operating Systems - by Andrew Tanenbaum and Herbert Bos](https://www.amazon.com/dp/013359162X)
+- `PAID` [Operating Systems Design and Implementation](https://www.amazon.com/dp/0131429388)
