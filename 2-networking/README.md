@@ -16,6 +16,7 @@ This path is designed to help you understand the core concepts of computer netwo
 8. [Network Security](./8-security.md)
 9. [Network Monitoring](./9-monitoring.md)
 10. [Network Administration](./10-administration.md)
+11. [Internet](./11-internet.md)
 
 ## Resources
 
