@@ -39,24 +39,6 @@ The process of designing a database involves several steps:
 4. **Physical Design**: Implement the logical schema in the DBMS.
 5. **Testing and Optimization**: Ensure the database meets requirements and is performant.
 
-## Data Modeling
-
-Data modeling is the process of creating a data model for the data to be stored in a database. It involves defining the structure of the data, its relationships, and constraints. There are different levels of data modeling:
-
-- **Conceptual Model**: High-level representation of the data.
-- **Logical Model**: Detailed representation of the data structure.
-- **Physical Model**: Implementation details for storage and access.
-- **ER Model (Entity-Relationship Model)**: Represents entities and their relationships.
-
-The most common data modeling technique is the Entity-Relationship (ER) model:
-
-### Entity-Relationship Model
-- **Entities**: Objects or concepts in the real world.
-- **Relationships**: Connections between entities.
-- **Attributes**: Properties or characteristics of entities.
-- **Keys**: Unique identifiers for entities.
-- **Cardinality**: Describes the number of instances in a relationship.
-
 ## Database Management Systems (DBMS)
 
 A DBMS is software that allows users to define, create, maintain, and control access to databases.

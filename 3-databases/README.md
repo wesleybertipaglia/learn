@@ -5,15 +5,15 @@ Welcome to the databases section of my learning journey. Here, you'll find exerc
 ## Topics
 
 1. [Foundations of Databases](./1-foundations.md)
-2. SQL
-3. NoSQL
-4. Normalization and Denormalization
-5. Database Design
-6. Database Management
-7. Database Security
-8. Database Monitoring
-9. Database Performance
-10. Data Warehousing
+2. [Database Design](./2-design.md)
+3. [SQL](./3-sql.md)
+4. [NoSQL](./4-nosql.md)
+5. [Normalization](./5-normalization.md)
+6. [Denormalization](./6-denormalization.md)
+7. [ACID Transactions](./7-acid.md)
+8. [CAP Theorem](./8-cap.md)
+9. [Database Security](./9-security.md)
+10. [Database Management](./10-management.md)
 
 ## Resources
 
