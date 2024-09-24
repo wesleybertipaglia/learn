@@ -4,16 +4,16 @@ Welcome to the databases section of my learning journey. Here, you'll find exerc
 
 ## Topics
 
-- 1. Foundations of Databases
-- 2. SQL
-- 3. NoSQL
-- 4. Normalization and Denormalization
-- 5. Database Design
-- 6. Database Management
-- 7. Database Security
-- 8. Database Monitoring
-- 9. Database Performance
-- 10. Data Warehousing
+1. [Foundations of Databases](./1-foundations.md)
+2. SQL
+3. NoSQL
+4. Normalization and Denormalization
+5. Database Design
+6. Database Management
+7. Database Security
+8. Database Monitoring
+9. Database Performance
+10. Data Warehousing
 
 ## Resources
 
