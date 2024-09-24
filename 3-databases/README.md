@@ -53,7 +53,17 @@ Welcome to the databases section of my learning journey. Here, you'll find exerc
 
 ### Videos
 
-
+- [What is a Database? - by IBM](https://youtu.be/hRulZhTtUTg)
+- [SQL vs NoSQL, What is the Difference? - by IBM](https://youtu.be/Q5aTUc7c4jg)
+- [SQL Databases Explained - by Fireship](https://youtu.be/zsjvFFKOm3c)
+- [7 Databases Paradigms - by Fireship](https://youtu.be/W2Z7fbCLSTw)
+- [You need to learn SQL - by NetworkChuck](https://youtu.be/xiUTqnI6xk8)
+- [SQL Tutorial: Full Course - by FreeCodeCamp](https://youtu.be/HXV3zeQKqGY)
+- [NoSQL Tutorial: Full Course - by FreeCodeCamp](https://youtu.be/xh4gy1lbL2k)
+- [PostgreSQL Tutorial - by FreeCodeCamp](https://youtu.be/SpfIwlAYaKk)
+- [MySQL Course - by BroCode](https://youtu.be/5OdVJbNCSso)
+- [MongoDB Tutorial - by BroCode](https://youtu.be/c2M-rlkkT5o)
+- [Redis Full Course - by FreeCodeCamp](https://youtu.be/XCsS_NVAa1g)
 
 ### Databases
 
