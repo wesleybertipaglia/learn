@@ -27,7 +27,3 @@ This path is designed to help you understand the core concepts of operating syst
 ## Resources
 
 - [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- [Linux Journey](https://linuxjourney.com/)
-- [Linux Command](https://linuxcommand.org/)
-- [Linux Handbook](https://linuxhandbook.com/)
-- [Linuxize](https://linuxize.com/)

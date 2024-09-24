@@ -26,6 +26,17 @@ Linux is the kernel of the operating system that powers a wide range of devices,
 - [Linux Documentation](https://www.kernel.org/doc/html/latest/index.html)
 - [GNU Project](https://www.gnu.org/)
 
+### Books
+
+- `FREE` [The Linux Command Line - by William Shotts](http://linuxcommand.org/tlcl.php)
+- `FREE` [The Linux Programming Interface - by Michael Kerrisk](https://man7.org/tlpi/)
+- `PAID` [The Linux Command Line - by William Shotts](https://www.amazon.com/dp/1593279523)
+- `PAID` [UNIX and Linux System Administration Handbook - by Evi Nemeth](https://www.amazon.com/dp/0134277554)
+- `PAID` [How Linux Works - by Brian Ward](https://www.amazon.com/dp/1718500408)
+- `PAID` [Linux Pocket Guide - by Daniel J. Barrett](https://www.amazon.com/dp/1098157966)
+- `PAID` [Linux Bible - by Christopher Negus](https://www.amazon.com/dp/1119578884)
+- `PAID` [Linux Command Line and Shell Scripting Bible - by Richard Blum](https://www.amazon.com/dp/1119700914)
+
 ### Articles
 
 - [Wikipedia - Linux](https://en.wikipedia.org/wiki/Linux)
@@ -33,7 +44,6 @@ Linux is the kernel of the operating system that powers a wide range of devices,
 - [Wikipedia - Linux Distribution](https://en.wikipedia.org/wiki/Linux_distribution)
 - [FOSS Linux - Linux Portal](https://www.fosslinux.com/)
 - [It's FOSS - Linux Portal](https://itsfoss.com/)
-
 
 ### Videos
 
@@ -55,4 +65,3 @@ Linux is the kernel of the operating system that powers a wide range of devices,
 - [openSUSE](https://www.opensuse.org/)
 - [Manjaro](https://manjaro.org/)
 - [Zorin OS](https://zorinos.com/)
-
