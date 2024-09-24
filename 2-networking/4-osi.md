@@ -40,7 +40,8 @@ The OSI Model is a reference model for computer networks that divides network co
 
 ## 7. Application Layer
 
-- **Function**: Interface between applications and the network. Provides network services for user applications. - **Protocols and Technologies**: HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol).
+- **Function**: Interface between applications and the network. Provides network services for user applications. 
+- **Protocols and Technologies**: HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol).
 - **Examples**: Web browsers, email clients, file transfer services.
 
 ---
