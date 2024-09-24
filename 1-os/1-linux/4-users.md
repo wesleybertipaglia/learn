@@ -112,5 +112,5 @@ sudo chmod permissions file
 
 ---
 
-- [Previous](./4-permissions.md)
-- [Next](./6-processes.md)
+- [Previous](./3-files.md)
+- [Next](./5-groups.md)

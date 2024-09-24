@@ -131,5 +131,5 @@ umask 002
 
 ---
 
-- [Previous](./4-permissions.md)
-- [Next](./6-processes.md)
+- [Previous](./4-users.md)
+- [Next](./6-permissions.md)

@@ -118,5 +118,5 @@ chgrp group file
 
 ---
 
-- [Previous](./3-files.md)
-- [Next](./5-users.md)
+- [Previous](./5-groups.md)
+- [Next](./7-processes.md)

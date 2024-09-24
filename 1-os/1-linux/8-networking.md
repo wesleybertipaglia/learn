@@ -115,5 +115,6 @@ tcpdump -i eth0
 
 ---
 
-- [Previous](./6-processes.md)
-- [Next](./8-security.md)
+- [Previous](./7-processes.md)
+- [Next](./9-security.md)
+

@@ -120,5 +120,5 @@ sudo rkhunter --check
 
 ---
 
-- [Previous](./7-networking.md)
-- [Next](./9-monitoring.md)
+- [Previous](./8-networking.md)
+- [Next](./10-monitoring.md)

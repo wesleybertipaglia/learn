@@ -45,4 +45,4 @@ umount /mount/point
 ---
 
 - [Previous](./2-commands.md)
-- [Next](./4-permissions.md)
+- [Next](./4-users.md)

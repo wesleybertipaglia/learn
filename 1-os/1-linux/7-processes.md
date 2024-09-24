@@ -104,5 +104,6 @@ bg %n
 
 ---
 
-- [Previous](./5-users.md)
-- [Next](./7-networking.md)
+- [Previous](./6-permissions.md)
+- [Next](./8-networking.md)
+
