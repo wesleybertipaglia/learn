@@ -74,3 +74,4 @@ Network administration involves managing and maintaining a network infrastructur
 ---
 
 - [Previous](./9-monitoring.md)
+- [Next](./11-internet.md)
