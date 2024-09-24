@@ -1,10 +1,6 @@
 # Network Devices
 
-Network devices are hardware components that facilitate communication and data transfer between different devices within a network. Here’s an overview of the most common network devices:
-
-# Summary of Network Devices
-
-Network devices are categorized based on their functions and roles in a network. Below is an overview of these devices, grouped by purpose.
+Network devices are hardware components that facilitate communication and data transfer between different devices within a network.
 
 ## 1. Connectivity Devices
 These devices facilitate connections between multiple networks or network segments.
