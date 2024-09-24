@@ -12,7 +12,8 @@ Key concepts in networking include:
 - **Protocols**: Rules that devices follow to communicate.
 - **Client-Server Model**: Devices can act as clients (requesting data) or servers (providing data).
 - **Peer-to-Peer Model**: Devices can communicate directly with each other without a central server.
-- **Internet**: A global network of networks that allows devices to connect worldwide.
+- **Internet**: A global computer network that connects millions of devices worldwide.
+- **WWW (World Wide Web)**: The system that link web pages and resources on the internet.
 
 ## 2. Network Classification
 
