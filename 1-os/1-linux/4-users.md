@@ -64,6 +64,12 @@ sudo userdel username
 
 ### Modify User Properties
 
+- Changes the username of the current user:
+
+```bash
+sudo usermod -l new_username
+```
+
 - Changes the username of a user:
 
 ```bash
@@ -73,19 +79,21 @@ sudo usermod -l new_username old_username
 - Changes the password of a user:
 
 ```bash
+# using usermod
 sudo usermod -p password username
+
+# using passwd
+sudo passwd username
 ```
 
 - Changes the password of the current user:
 
 ```bash
-passwd
-```
+# using usermod
+sudo usermod -p password myusername
 
-- Changes the password of a specific user:
-
-```bash
-sudo passwd username
+# using passwd
+sudo passwd
 ```
 
 ### User Permissions
