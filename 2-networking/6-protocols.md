@@ -62,11 +62,17 @@ Protocols that support specific applications and services.
   - Operates primarily for sending messages.
   - Works with other protocols (e.g., POP3, IMAP) for receiving.
 
-### Post Office Protocol (POP3) and Internet Message Access Protocol (IMAP)
-- **Function**: Manage the retrieval of emails.
+### Internet Message Access Protocol (IMAP)
+- **Function**: Retrieves emails from a mail server.
 - **Key Features**:
-  - POP3 downloads emails to the client and removes them from the server.
-  - IMAP allows emails to remain on the server, enabling access from multiple devices.
+  - Allows users to access emails stored on servers.
+  - Supports multiple devices accessing the same mailbox.
+
+### Post Office Protocol (POP3)
+- **Function**: Downloads emails to a local device.
+- **Key Features**:
+  - Retrieves emails from a mail server.
+  - Typically deletes messages from the server after download.
 
 ## 4. Network Management Protocols
 Protocols used for monitoring and managing network devices.
@@ -100,5 +106,5 @@ Protocols that provide secure communication over a network.
 
 ---
 
-- [Previous](./3-tcp.md)
-- [Next](./5-address.md)
+- [Previous](./5-tcp.md)
+- [Next](./7-addressing.md)
