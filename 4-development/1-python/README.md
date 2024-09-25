@@ -57,10 +57,6 @@ Python is a high-level, interpreted, and general-purpose programming language. P
 - [Python: Full Course - by Mosh](https://youtu.be/_uQrJ0TkZlc)
 - [Python for Data Analytics: Full Course - by Luke Barousse](https://youtu.be/wUSDVGivd-8)
 - [Python for Beginners: Full Course - by NeetCode](https://youtu.be/s3KhqPjBPaQ)
-- [Learn Python Backend Development - by FreeCodeCamp](https://youtu.be/ftKiHCDVwfA)
-- [Python Django Full Course for Beginners - by Dave Gray](https://youtu.be/Rp5vd34d-z4)
-- [Python Tutorial: Build a SaaS App with Django - by CodingEntrepreneurs](https://youtu.be/WbNNESIxJnY)
-- [Python Tutorial: Build a Course Platform with Django - by CodingEntrepreneurs](https://youtu.be/I_IchaIdmnA)
 
 ### Articles
 

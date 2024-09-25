@@ -37,4 +37,8 @@ Welcome to the development learning path! Here you'll find exercises, projects, 
 
 ### Videos
 
+- [Learn Python Backend Development - by FreeCodeCamp](https://youtu.be/ftKiHCDVwfA)
+- [Python Django Full Course for Beginners - by Dave Gray](https://youtu.be/Rp5vd34d-z4)
+- [Python Tutorial: Build a SaaS App with Django - by CodingEntrepreneurs](https://youtu.be/WbNNESIxJnY)
+- [Python Tutorial: Build a Course Platform with Django - by CodingEntrepreneurs](https://youtu.be/I_IchaIdmnA)
 - [Complete Java, Spring, and Microservices Course - by Telusko](https://youtu.be/4XTsAAHW_Tc)
