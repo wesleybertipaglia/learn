@@ -30,11 +30,6 @@ Welcome to the development learning path! Here you'll find exercises, projects, 
 - `PAID` [Android Developer Professional Certificate - by Meta](https://www.coursera.org/professional-certificates/meta-android-developer)
 - `PAID` [The Complete 2024 Web Development Bootcamp - by Dr. Angela Yu](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 
-### Articles
-
-- [Dev.to - The Biggest Developer Community](https://dev.to/)
-- [Daily.dev - Developer Networking and Articles](https://daily.dev/)
-
 ### Videos
 
 - [Learn Python Backend Development - by FreeCodeCamp](https://youtu.be/ftKiHCDVwfA)
@@ -42,3 +37,8 @@ Welcome to the development learning path! Here you'll find exercises, projects, 
 - [Python Tutorial: Build a SaaS App with Django - by CodingEntrepreneurs](https://youtu.be/WbNNESIxJnY)
 - [Python Tutorial: Build a Course Platform with Django - by CodingEntrepreneurs](https://youtu.be/I_IchaIdmnA)
 - [Complete Java, Spring, and Microservices Course - by Telusko](https://youtu.be/4XTsAAHW_Tc)
+
+### Articles
+
+- [Dev.to - The Biggest Developer Community](https://dev.to/)
+- [Daily.dev - Developer Networking and Articles](https://daily.dev/)
