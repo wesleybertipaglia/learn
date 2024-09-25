@@ -33,6 +33,23 @@ Python is a high-level, interpreted, and general-purpose programming language. P
 
 ## Resources
 
+### Tools
+
+- [Python - Official Website](https://www.python.org/)
+- [FastAPI - Official Website](https://fastapi.tiangolo.com/)
+- [Flast - Official Website](https://flask.palletsprojects.com/en/3.0.x/)
+- [Django - Official Website](https://www.djangoproject.com/)
+
+### Courses
+
+- `FREE` [Intro to Programming - by Kaggle](https://www.kaggle.com/learn/intro-to-programming)
+- `FREE` [Python Course - by Kaggle](https://www.kaggle.com/learn/python)
+- `FREE` [Python Essentials 1 and 2 - by Cisco](https://www.netacad.com/learning-collections/python)
+- `FREE` [Python for Everybody - by FreeCodeCamp](https://www.freecodecamp.org/learn/python-for-everybody/)
+- `FREE` [Scientific Computing with Python - by FreeCodeCamp](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
+- `FREE` [Introduction to Python Programming - by Udacity](https://www.udacity.com/course/introduction-to-python--ud1110)
+- `PAID` [100 Days of Code: The Complete Python Pro Bootcamp - by Dr. Angela Yu](https://www.udemy.com/course/100-days-of-code/)
+
 ### Videos
 
 - [CS50’s Introduction to Programming with Python - by Harvard](https://youtu.be/nLRL_NcnK-4)
@@ -44,3 +61,9 @@ Python is a high-level, interpreted, and general-purpose programming language. P
 - [Python Django Full Course for Beginners - by Dave Gray](https://youtu.be/Rp5vd34d-z4)
 - [Python Tutorial: Build a SaaS App with Django - by CodingEntrepreneurs](https://youtu.be/WbNNESIxJnY)
 - [Python Tutorial: Build a Course Platform with Django - by CodingEntrepreneurs](https://youtu.be/I_IchaIdmnA)
+
+### Articles
+
+- [Python Tutorial - W3Schools](https://www.w3schools.com/python/)
+- [Python Tutorial - by GeeksforGeeks](https://www.geeksforgeeks.org/python-programming-language-tutorial/)
+- [Python - by Real Python](https://realpython.com/)
