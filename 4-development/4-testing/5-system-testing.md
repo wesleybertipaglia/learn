@@ -43,39 +43,79 @@ System testing is a high-level testing phase that focuses on validating the comp
 
 Consider a system test for a user service that creates and retrieves user information from a repository while sending notifications. The test verifies that the user creation and retrieval functions work correctly and that the notification service is triggered as expected.
 
-```java
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+```python
+import unittest
 
-public class UserServiceSystemTest {
+# Mock classes to simulate the UserRepository and NotificationService
+class UserRepository:
+    """Simulates a repository that stores and retrieves user data."""
+    def __init__(self):
+        self.users = {}
 
-    private UserService userService;
-    private InMemoryUserRepository userRepository;
-    private NotificationService notificationService;
+    def add_user(self, user_id, user_info):
+        self.users[user_id] = user_info
 
-    @Before
-    public void setUp() {
-        // Arrange
-        userRepository = new InMemoryUserRepository();
-        notificationService = new NotificationService();
-        userService = new UserService(userRepository, notificationService);
-    }
+    def get_user(self, user_id):
+        return self.users.get(user_id)
 
-    @Test
-    public void testCreateAndRetrieveUserWithNotification() {
-        // Act
-        userService.createUser(1, "Jane Doe");
-        User user = userService.getUserById(1);
+class NotificationService:
+    """Simulates a notification service that sends notifications."""
+    def __init__(self):
+        self.notifications = []
 
-        // Assert
-        assertEquals(1, user.getId());
-        assertEquals("Jane Doe", user.getName());
-        // Note: In a real system test, you might also check if the notification was sent properly.
-    }
-}
+    def send_notification(self, message):
+        self.notifications.append(message)
+
+# The UserService interacts with the UserRepository and NotificationService
+class UserService:
+    def __init__(self, user_repo, notification_service):
+        self.user_repo = user_repo
+        self.notification_service = notification_service
+
+    def create_user(self, user_id, user_info):
+        self.user_repo.add_user(user_id, user_info)
+        self.notification_service.send_notification(f"User {user_id} created!")
+
+    def retrieve_user(self, user_id):
+        return self.user_repo.get_user(user_id)
+
+# System Test Case
+class TestUserServiceSystem(unittest.TestCase):
+    
+    def setUp(self):
+        # Set up repository and notification service
+        self.user_repo = UserRepository()
+        self.notification_service = NotificationService()
+        self.user_service = UserService(self.user_repo, self.notification_service)
+
+    def test_create_and_retrieve_user(self):
+        # Test user creation
+        user_id = "user123"
+        user_info = {"name": "John Doe", "email": "john@example.com"}
+        
+        self.user_service.create_user(user_id, user_info)
+        
+        # Verify user is added to the repository
+        retrieved_user = self.user_service.retrieve_user(user_id)
+        self.assertEqual(retrieved_user, user_info)
+        
+        # Verify that the notification was sent
+        self.assertIn(f"User {user_id} created!", self.notification_service.notifications)
+
+    def test_user_not_found(self):
+        # Test retrieving a non-existing user
+        user_id = "non_existent_user"
+        retrieved_user = self.user_service.retrieve_user(user_id)
+        
+        # Assert the user does not exist
+        self.assertIsNone(retrieved_user)
+
+# Run the system tests
+if __name__ == '__main__':
+    unittest.main()
 ```
 
-## Conclusion
+---
 
-System testing is a critical phase in the software development lifecycle that focuses on validating the complete and integrated software system. By ensuring that all components work together as expected and meeting specified requirements, system testing helps to identify issues and verify that the software is ready for deployment. Adopting best practices and addressing common challenges can enhance the effectiveness of system testing and contribute to overall software quality.
+- [Previous](./4-integration-testing.md)
+- [Next](./6.py-test.md)

@@ -47,30 +47,38 @@ Unit testing is a software testing method where individual components or functio
 
 Consider a simple unit test for a function that calculates the sum of two numbers:
 
-```java
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+```python
+import unittest
 
-public class CalculatorTest {
+# Function to be tested
+def add_numbers(a, b):
+    return a + b
 
-    @Test
-    public void testAddition() {
-        // Arrange
-        Calculator calculator = new Calculator();
-        int a = 5;
-        int b = 3;
+# Unit test for the add_numbers function
+class TestAddNumbers(unittest.TestCase):
+    
+    def test_sum_of_two_positive_numbers(self):
+        # Test the sum of two positive numbers
+        self.assertEqual(add_numbers(3, 4), 7)
+    
+    def test_sum_of_positive_and_negative_number(self):
+        # Test the sum of a positive and a negative number
+        self.assertEqual(add_numbers(10, -5), 5)
+    
+    def test_sum_of_two_negative_numbers(self):
+        # Test the sum of two negative numbers
+        self.assertEqual(add_numbers(-6, -4), -10)
 
-        // Act
-        int result = calculator.add(a, b);
+    def test_sum_with_zero(self):
+        # Test the sum when one number is zero
+        self.assertEqual(add_numbers(0, 10), 10)
 
-        // Assert
-        assertEquals(8, result);
-    }
-
-}
-
+# Run the unit tests
+if __name__ == '__main__':
+    unittest.main()
 ```
 
-## Conclusion
+---
 
-Unit testing is a fundamental practice in software development that helps ensure code quality and reliability. By testing individual components in isolation, developers can identify issues early, improve code design, and facilitate ongoing maintenance and development. Adopting best practices and leveraging testing frameworks can enhance the effectiveness of unit testing and contribute to overall software quality.
+- [Previous](./2-aaa-method.md)
+- [Next](./4-integration-testing.md)

@@ -53,4 +53,4 @@ Software testing is essential for delivering high-quality software. By detecting
 
 ---
 
-For more detailed information, consider exploring specific testing methodologies, tools, and case studies relevant to your field or project.
+- [Next](./2-aaa-method.md)

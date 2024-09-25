@@ -43,37 +43,68 @@ Integrated testing, often referred to as integration testing, is a type of softw
 
 Consider a simple integration test for a `UserService` that interacts with a `UserRepository` to create and retrieve user information:
 
-```java
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+```python
+import unittest
 
-public class UserServiceIntegrationTest {
+# Mocking the UserRepository
+class UserRepository:
+    def __init__(self):
+        self.users = {}
 
-    private UserService userService;
-    private InMemoryUserRepository userRepository;
+    def add_user(self, user_id, user_info):
+        self.users[user_id] = user_info
 
-    @Before
-    public void setUp() {
-        // Arrange
-        userRepository = new InMemoryUserRepository();
-        userService = new UserService(userRepository);
-    }
+    def get_user(self, user_id):
+        return self.users.get(user_id)
 
-    @Test
-    public void testCreateAndRetrieveUser() {
-        // Act
-        userService.createUser(1, "John Doe");
-        User user = userService.getUserById(1);
+# UserService interacts with the UserRepository
+class UserService:
+    def __init__(self, user_repository):
+        self.user_repository = user_repository
 
-        // Assert
-        assertEquals(1, user.getId());
-        assertEquals("John Doe", user.getName());
-    }
+    def create_user(self, user_id, user_info):
+        self.user_repository.add_user(user_id, user_info)
 
-}
+    def retrieve_user(self, user_id):
+        return self.user_repository.get_user(user_id)
+
+# Integration Test Class
+class TestUserServiceIntegration(unittest.TestCase):
+    
+    def setUp(self):
+        # Create a UserRepository instance
+        self.user_repository = UserRepository()
+        # Create a UserService instance with the repository
+        self.user_service = UserService(self.user_repository)
+
+    def test_create_and_retrieve_user(self):
+        # Arrange
+        user_id = "user123"
+        user_info = {"name": "Alice", "email": "alice@example.com"}
+
+        # Act
+        self.user_service.create_user(user_id, user_info)
+        retrieved_user = self.user_service.retrieve_user(user_id)
+
+        # Assert
+        self.assertEqual(retrieved_user, user_info)
+
+    def test_user_not_found(self):
+        # Arrange
+        user_id = "non_existent_user"
+
+        # Act
+        retrieved_user = self.user_service.retrieve_user(user_id)
+
+        # Assert
+        self.assertIsNone(retrieved_user)
+
+# Run the integration tests
+if __name__ == '__main__':
+    unittest.main()
 ```
 
-## Conclusion
+---
 
-Integration testing is a critical phase in the software development lifecycle that ensures different components or systems work together seamlessly. By verifying interactions and end-to-end functionality, integration testing helps to identify issues early, improve system reliability, and ensure that integrated systems meet quality standards. Employing best practices and addressing common challenges can enhance the effectiveness of integration testing and contribute to overall software quality.
+- [Previous](./3-unit-testing.md)
+- [Next](./5-system-testing.md)

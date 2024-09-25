@@ -37,29 +37,58 @@ The AAA (Arrange, Act, Assert) method is a structured approach used in software 
 
 Consider a simple unit test for a function that calculates the sum of two numbers:
 
-```java
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+```python
+import unittest
 
-public class CalculatorTest {
+# Function to be tested
+def add_numbers(a, b):
+    return a + b
 
-    @Test
-    public void testAddition() {
-        // Arrange
-        Calculator calculator = new Calculator();
-        int a = 5;
-        int b = 3;
+# Unit test using the AAA method
+class TestAddNumbers(unittest.TestCase):
 
-        // Act
-        int result = calculator.add(a, b);
+    def test_add_two_positive_numbers(self):
+        # Arrange
+        num1 = 5
+        num2 = 3
+        expected_sum = 8
 
-        // Assert
-        assertEquals(8, result);
-    }
+        # Act
+        result = add_numbers(num1, num2)
 
-}
+        # Assert
+        self.assertEqual(result, expected_sum)
+
+    def test_add_negative_and_positive_number(self):
+        # Arrange
+        num1 = -2
+        num2 = 7
+        expected_sum = 5
+
+        # Act
+        result = add_numbers(num1, num2)
+
+        # Assert
+        self.assertEqual(result, expected_sum)
+
+    def test_add_two_negative_numbers(self):
+        # Arrange
+        num1 = -4
+        num2 = -6
+        expected_sum = -10
+
+        # Act
+        result = add_numbers(num1, num2)
+
+        # Assert
+        self.assertEqual(result, expected_sum)
+
+# Run the tests
+if __name__ == '__main__':
+    unittest.main()
 ```
 
-## Conclusion
+---
 
-The AAA method is a straightforward and effective way to organize test cases. By separating the setup, execution, and verification phases, it helps ensure that tests are systematic and reliable.
+- [Previous](./1-introduction.md)
+- [Next](./3-unit-testing.md)
