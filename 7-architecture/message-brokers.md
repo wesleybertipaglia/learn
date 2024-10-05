@@ -26,17 +26,13 @@ A **message broker** is a software component that facilitates communication betw
    - Supports continuous data flow, allowing real-time processing and analytics.
 
 ## Examples of Message Brokers
-- **RabbitMQ**: 
-  - A widely used open-source message broker that supports multiple messaging protocols and features advanced routing capabilities.
+- **RabbitMQ**: A widely used open-source message broker that supports multiple messaging protocols and features advanced routing capabilities.
   
-- **ActiveMQ**: 
-  - An open-source message broker from Apache that supports both JMS (Java Message Service) and AMQP (Advanced Message Queuing Protocol).
+- **ActiveMQ**: An open-source message broker from Apache that supports both JMS (Java Message Service) and AMQP (Advanced Message Queuing Protocol).
   
-- **Amazon SQS**: 
-  - A fully managed message queuing service by AWS that enables decoupled communication between distributed systems.
+- **Amazon SQS**: A fully managed message queuing service by AWS that enables decoupled communication between distributed systems.
 
-- **Kafka**: 
-  - A distributed streaming platform designed for high-throughput and low-latency message processing. It is often used for building real-time data pipelines and streaming applications.
+- **Kafka**: A distributed streaming platform designed for high-throughput and low-latency message processing. It is often used for building real-time data pipelines and streaming applications.
 
 ## Pros and Cons
 
